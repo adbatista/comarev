@@ -16,6 +16,7 @@ gem 'puma', '~> 4.1'
 gem 'pundit'
 gem 'rack-cors'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
+gem 'sidekiq', '~> 6.4.1'
 
 group :test do
   gem 'simplecov'

@@ -8,4 +8,5 @@ class Invoice < ApplicationRecord
 
   scope :in_progress, -> { where(status: :in_progress) }
   scope :finished, -> { where(status: :finished) }
+  scope :about_expire, -> (days) { where("due_date < :expire", expire: Time.current + days) }
 end
